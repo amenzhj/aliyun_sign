@@ -12,7 +12,22 @@
 
 ----
 
-### [🔥推荐使用 Action 签到🔥](https://github.com/ImYrS/aliyun-auto-signin/blob/main/How-To-Use-Action.md)
+# 🪅 AliyunDrive Pro 🪅
+
+### 目前唯一*支持八月新版签到任务的阿里云盘签到
+
+免费 | 高速 | Web UI | 多账户独立配置
+
+#### [立即使用](https://aliyundrive.pro)
+
+**个人隐私就是底线!**
+[隐私政策](https://aliyundrive.pro/public/privacy) 与 [服务条款](https://aliyundrive.pro/public/tos)
+
+*在我能找到的范围里
+
+----
+
+### [使用 Action 签到](https://github.com/ImYrS/aliyun-auto-signin/blob/main/How-To-Use-Action.md)
 
 0 成本 | 自动更新 | 支持推送 | 无需维护
 </div>
