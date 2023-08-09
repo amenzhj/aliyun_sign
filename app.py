@@ -427,19 +427,7 @@ def main():
             ' 尽快处理.'
         )
 
-    new_platform = (
-        '\n\n[通知] 新一代签到平台发布!\n\n'
-        '经过一个月的测试, 现在向你推荐由原班人马开发的新阿里云盘签到平台!\n\n'
-        '官网: https://aliyundrive.pro\n\n'
-        '- 免费, 快速, 可视化, 高可用性\n'
-        '- 支持最新版签到任务, 可自动完成上传文件, 观看视频等任务\n'
-        '- 每天推送太吵了? 支持仅签到失败时才推送\n'
-        '- 可同时绑定多个账号, 分别配置签到参数, 可视化配置更轻松\n'
-        '- 每天定时签到怕风控? 可以配置每天随机事件签到!\n'
-        '- 每周自动参加战队 PK, 帮你领取补签卡\n'
-        '- 害怕隐私风险? 可在登陆页面查看完整的隐私条款, 个人隐私是底线!\n\n'
-        '更多问题请在 GitHub issue 中提出, 或加入交流群 https://t.me/aliyun_auto_signin'
-    )
+    new_platform = '\n\n目前唯一支持新版签到任务的新签到平台: https://aliyundrive.pro'
 
     text += new_platform
     text_html += new_platform
