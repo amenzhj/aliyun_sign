@@ -1,7 +1,6 @@
 """
-    @Author: ImYrS Yang
+    @Author: thsrite
     @Date: 2023/3/31
-    @Copyright: ImYrS Yang
     @Description: 
 """
 import json
