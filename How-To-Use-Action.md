@@ -89,6 +89,11 @@
               CQHTTP_ENDPOINT: ${{ secrets.CQHTTP_ENDPOINT }}
               CQHTTP_USER_ID: ${{ secrets.CQHTTP_USER_ID }}
               CQHTTP_ACCESS_TOKEN: ${{ secrets.CQHTTP_ACCESS_TOKEN }}
+              WECHAT_CORPID: ${{ inputs.WECHAT_CORPID }}
+              WECHAT_CORPSECRET: ${{ inputs.WECHAT_CORPSECRET }}
+              WECHAT_AGENTID: ${{ inputs.WECHAT_AGENTID }}
+              WECHAT_TOUSER: ${{ inputs.WECHAT_TOUSER }}
+              WECHAT_PROXYURL: ${{ inputs.WECHAT_PROXYURL }}
     ```
 
 2. 按需修改 `corn` 定时运行时间, 推荐在中国时间 22:00 之后.
@@ -133,6 +138,11 @@
 - `CQHTTP_ENDPOINT` [可选] *go-cqhttp 服务器地址*
 - `CQHTTP_USER_ID` [可选] *go-cqhttp user id*
 - `CQHTTP_ACCESS_TOKEN` [可选] *go-cqhttp access_token*
+- `WECHAT_CORPID`: [可选] *corpid*
+- `WECHAT_CORPSECRET`: [可选] *corpsecret*
+- `WECHAT_AGENTID`: [可选] *agentid*
+- `WECHAT_TOUSER`: [可选] *touser*
+- `WECHAT_PROXYURL`: [可选] *proxyurl*
 
 > 这些 `Secrets` 将加密存储在 GitHub, 无法被直接读取, 但可以在 Action 中使用
 

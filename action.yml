@@ -107,6 +107,31 @@ inputs:
     required: false
     default: ''
 
+  WECHAT_CORPID:
+    description: 'wechat corpid'
+    required: false
+    default: ''
+
+  WECHAT_CORPSECRET:
+    description: 'wechat corpsecret'
+    required: false
+    default: ''
+
+  WECHAT_AGENTID:
+    description: 'wechat agentid'
+    required: false
+    default: ''
+
+  WECHAT_TOUSER:
+    description: 'wechat touser'
+    required: false
+    default: ''
+
+  WECHAT_PROXYURL:
+    description: 'wechat proxyurl'
+    required: false
+    default: ''
+
 runs:
   using: composite
   steps:
@@ -156,7 +181,11 @@ runs:
         WEBHOOK_URL: ${{ inputs.WEBHOOK_URL }}
         CQHTTP_ENDPOINT: ${{ inputs.CQHTTP_ENDPOINT }}
         CQHTTP_USER_ID: ${{ inputs.CQHTTP_USER_ID }}
-        CQHTTP_ACCESS_TOKEN: ${{ inputs.CQHTTP_ACCESS_TOKEN }}
+        WECHAT_CORPID: ${{ inputs.WECHAT_CORPID }}
+        WECHAT_CORPSECRET: ${{ inputs.WECHAT_CORPSECRET }}
+        WECHAT_AGENTID: ${{ inputs.WECHAT_AGENTID }}
+        WECHAT_TOUSER: ${{ inputs.WECHAT_TOUSER }}
+        WECHAT_PROXYURL: ${{ inputs.WECHAT_PROXYURL }}
 
 branding:
     icon: 'check-circle'

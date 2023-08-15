@@ -15,7 +15,7 @@ import time
 from configobj import ConfigObj
 import requests
 
-from modules import cqhttp, dingtalk, feishu, pushdeer, pushplus, serverchan, smtp, telegram, webhook
+from modules import cqhttp, dingtalk, feishu, pushdeer, pushplus, serverchan, smtp, telegram, webhook, wechat
 import github
 
 
@@ -280,6 +280,7 @@ def push(
         'smtp': smtp,
         'telegram': telegram,
         'webhook': webhook,
+        'wechat': wechat,
     }.items():
         if push_type in configured_push_types:
             pusher.push(config, content, content_html, title)
@@ -343,6 +344,11 @@ def get_config_from_env() -> Optional[dict]:
             'cqhttp_endpoint': environ['CQHTTP_ENDPOINT'],
             'cqhttp_user_id': environ['CQHTTP_USER_ID'],
             'cqhttp_access_token': environ['CQHTTP_ACCESS_TOKEN'],
+            'wechat_corpid': environ['WECHAT_CORPID'],
+            'wechat_corpsecret': environ['WECHAT_CORPSECRET'],
+            'wechat_agentid': environ['WECHAT_AGENTID'],
+            'wechat_touser': environ['WECHAT_TOUSER'],
+            'wechat_proxyurl': environ['WECHAT_PROXYURL'],
         }
     except KeyError as e:
         logging.error(f'环境变量 {e} 缺失.')

@@ -166,6 +166,7 @@ pyenvs 3.10.12 app.py
 | FeiShu     | 飞书群组机器人       | ✅  |   ✅    |
 | WebHook    | 自定义 WebHook   | ✅  |   ✅    |
 | go-cqhttp  | go-cqhttp 机器人 | ✅  |   ✅    |
+| wechat  | 企业微信应用 | ✅  |   ✅    |
 
 **填写推送渠道名称时不区分大小写, 例如 `dingtalk` 和 `DingTalk` 都是有效的**
 
@@ -234,6 +235,13 @@ pyenvs 3.10.12 app.py
     - `user_id`: 一般为 QQ 号
     - `access_token`: 访问令牌
     - [go-cqhttp 文档](https://docs.go-cqhttp.org/api/)
+
+- wechat
+    - `corpid`: 企业ID
+    - `corpsecret`: 应用Secret
+    - `agentid`: 应用iD
+    - `touser`: 接收消息用户名（选填，默认@all）
+    - `proxyurl`: 代理地址（选填，默认官方地址）
 
 - 欢迎 PR 更多推送渠道
 
