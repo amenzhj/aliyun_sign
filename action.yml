@@ -142,13 +142,13 @@ runs:
     - id: version
       uses: pozetroninc/github-action-get-latest-release@master
       with:
-        repository: ImYrS/aliyun-auto-signin
+        repository: amenzhj/aliyun_sign
         excludes: prerelease, draft
         token: ${{ inputs.GP_TOKEN }}
     - name: Download
       shell: bash
       run: |
-        wget https://github.com/ImYrS/aliyun-auto-signin/archive/refs/tags/${{ steps.version.outputs.release }}.zip -O release.zip
+        wget https://github.com/amenzhj/aliyun_sign/archive/refs/tags/${{ steps.version.outputs.release }}.zip -O release.zip
         rm -rf release
         unzip release.zip -d release
         rm release.zip
