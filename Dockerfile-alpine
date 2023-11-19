@@ -18,7 +18,7 @@ ENV PYTHONUNBUFFERED=1
 
 RUN mkdir /apps && cd /apps \
     && apk update && apk add git gcc \
-    && git clone https://github.com/ImYrS/aliyun-auto-signin.git && cd /apps/aliyun-auto-signin/ \ 
+    && git clone https://github.com/amenzhj/aliyun_sign.git && cd /apps/aliyun-auto-signin/ \ 
     && pip install --no-cache-dir --upgrade -r requirements.txt \
     && rm -rf /apps/aliyun-auto-signin/.git && apk del --purge git && apk cache clean
 
