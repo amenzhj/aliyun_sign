@@ -117,7 +117,10 @@ class SignIn:
                 headers={'Authorization': f'Bearer {self.access_token}'},
                 json={'isReward': False},
             ).json()
+            logging.info(f'[{self.phone}] 请求开始...')
+            logging.info(str(data))
             logging.debug(str(data))
+            logging.info(f'[{self.phone}] 请求结束...')
         except requests.RequestException as e:
             logging.error(f'[{self.phone}] 签到请求失败: {e}')
             if not retry:
